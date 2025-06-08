@@ -1,0 +1,21 @@
+.text-block {
+  display: flex;
+  justify-content: flex-start;
+  width: 280px;
+  background-color: rgba(0, 255, 255, 0.293);
+  padding: 50px;
+}
+
+.text-block h2 {
+  width: 20ch;
+  font-family: monospace;
+  text-wrap: nowrap;
+  overflow: hidden;
+  animation: typing 2s steps(20) infinite alternate-reverse;
+}
+
+@keyframes typing {
+  from {
+    width: 0ch;
+  }
+}

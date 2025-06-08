@@ -1,0 +1,11 @@
+.text-block {
+  max-width: 800px;
+  background-color: rgba(109, 109, 255, 0.381);
+}
+
+.text-block p {
+  columns: 200px 2;
+  column-gap: 30px;
+  color: #fff;
+  padding: 25px;
+}
