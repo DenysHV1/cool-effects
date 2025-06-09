@@ -1,7 +1,7 @@
 .wrapper {
   width: 100%;
-  height: 80vh;
-  perspective: 1000px;
+  height: 80.0vh;
+  perspective: 1000px; 
 }
 .card {
   position: absolute;
