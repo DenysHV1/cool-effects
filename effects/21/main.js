@@ -7,7 +7,6 @@ const callback = (evt) => {
 
   const x = evt.clientX - rect.left;
   const y = evt.clientY - rect.top;
-
   const centerX = rect.width / 2;
   const centerY = rect.height / 2;
   const offsetX = -(x - centerX) / centerX;
@@ -15,7 +14,9 @@ const callback = (evt) => {
   const rotateY = offsetX * MAX_ANGLE;
   const rotateX = offsetY * MAX_ANGLE;
   evt.currentTarget.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.05)`;
-  img.style.transform = `translate(${x * 0.1}px, ${y * 0.1}px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.3)`;
+  img.style.transform = `translate(${x * 0.1}px, ${
+    y * 0.1
+  }px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.3)`;
 };
 
 card.addEventListener("mouseleave", () => {
