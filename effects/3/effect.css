@@ -1,0 +1,63 @@
+.boxes1 {
+  position: relative;
+  margin-left: -30px;
+  margin-right: -30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2px;
+  background-image: url(contact-bg.png);
+  background-repeat: no-repeat;
+  background-size: 100% 1%;
+  background-position: top;
+  animation: bgAnimate 6s infinite alternate-reverse ease-in-out;
+  padding-top: 2px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+  @media screen and (max-width: 1440px) {
+    height: 100vh;
+    overflow: hidden;
+  }
+}
+
+@keyframes bgAnimate {
+  0% {
+    background-size: 100% 1%;
+  }
+  100% {
+    background-size: 100% 150%;
+  }
+}
+
+.special-box {
+  width: calc((100% - (39 * 2px)) / 40);
+  aspect-ratio: 1;
+  background-color: #2a2a2a;
+  transition: background-color 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  @media screen and (max-width: 1400px) {
+    width: calc((100% - (19 * 3px)) / 20);
+  }
+
+  @media screen and (max-width: 480px) {
+    width: calc((100% - (10 * 3px)) / 11);
+  }
+}
+
+.special-box.active {
+  background: -webkit-linear-gradient(90deg, #eae6ff, #f4f4f4);
+  background: linear-gradient(90deg, #eae6ff, #f4f4f4);
+}
+
+.title{
+	font-family: "Kaushan Script", cursive;
+	font-weight: 600;
+	font-size: 56px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.features{
+background: -webkit-linear-gradient(90deg,#f4f0f4,#45484a); /* Chrome 10-25, Safari 5.1-6 */ background: linear-gradient(90deg,#f4f0f4,#45484a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}

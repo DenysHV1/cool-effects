@@ -1,21 +1,21 @@
-#text{
-	background-color: #fff;
-	padding: 10px 20px;
-	border: 2px solid black;
-	border-radius: 10px;
-	width: 50%;
-	color: black;
+#text {
+  background-color: #fff;
+  padding: 10px 20px;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 50%;
+  color: black;
 }
 
 .button {
-	background-color: #fff;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	border-radius: 10px;
-	padding: 10px 20px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 10px 20px;
 }
 
-.features{
-	flex-direction: row;
+.features {
+  flex-direction: row;
 }

@@ -203,10 +203,10 @@ select:-webkit-autofill:focus {
   transform: skew(25deg);
 }
 
-
 .btn-flip {
-  margin-top: 20px;
-  margin-left: 20px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
   opacity: 1;
   outline: 0;
   color: #fff;
