@@ -1,0 +1,59 @@
+body {
+  background: #1e293b;
+}
+
+.fade-box {
+  position: relative;
+  max-width: 50%;
+  height: 80px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.animate-list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40px;
+  white-space: nowrap;
+  will-change: transform;
+  min-width: fit-content;
+animation: loop 18s linear infinite;
+}
+
+@keyframes loop {
+  0% {
+    transform: translate(0%);
+  }
+  100% {
+transform: translateX(-33.33%);
+  }
+}
+
+.animate-list li {
+  font-family: "Kaushan Script", cursive;
+  color: #fff;
+  font-size: 44px;
+  padding: 20px;
+  background-color: #15191f;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.fade {
+  position: absolute;
+  background: linear-gradient(
+    90deg,
+    #1e293b,
+    transparent 30%,
+    transparent 70%,
+    #1e293b
+  );
+  inset: 0;
+  pointer-events: none;
+}
