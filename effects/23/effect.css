@@ -1,0 +1,51 @@
+.navigation {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  width: 50px;
+  height: 50px;
+}
+.navigation_wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.navigation_item {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 1s ease;
+}
+.navigation_item_main {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 1s ease;
+  z-index: 6;
+}
+.navigation_item_img {
+  width: 50px;
+  height: 50px;
+  max-width: none;
+  transition: all 1s ease;
+  opacity: 0;
+}
+.navigation_item_main_img {
+  width: 50px;
+  max-width: none;
+}
+.hover_item{
+  transition: all .3s ease;
+}
+.hover_item:hover {
+  transform: scale(1.1);
+}
