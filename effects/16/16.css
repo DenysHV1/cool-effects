@@ -1,0 +1,13 @@
+body {
+  background: -webkit-linear-gradient(90deg, #fafafa, #bababa);
+  background: linear-gradient(90deg, #fafafa, #bababa);
+}
+
+input {
+  background-color: #fff;
+  padding: 10px 20px;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 50%;
+  color: black;
+}
