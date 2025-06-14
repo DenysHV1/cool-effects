@@ -1,0 +1,10 @@
+body {
+	background-color: #f3f3f3;
+}
+
+.features{
+	background-image: url(bg2.png), url(bg1.jpg);
+	background-position: center, 50% 60%;
+	background-repeat: no-repeat, no-repeat;
+	background-size: 120% 110%, cover;
+}

@@ -1,0 +1,32 @@
+body {
+  background: -webkit-linear-gradient(90deg, #0062ff, #00f0ec, #ffffff);
+  background: linear-gradient(90deg, #0062ff, #00f0ec, #ffffff);
+}
+
+.boxes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/*! ******************** */
+.boxes:hover > :not(:hover) {
+  filter: blur(5px);
+  opacity: 0.5;
+}
+/*! ******************** */
+
+.box {
+  background-color: black;
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  cursor: pointer;
+  transition: filter 350ms ease, opacity 350ms ease;
+}
+
+
