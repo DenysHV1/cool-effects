@@ -6,6 +6,7 @@
   padding: 0;
   border: 0;
   box-sizing: border-box;
+  color: #fff;
 }
 
 html,
@@ -20,6 +21,7 @@ body {
   -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #1f3c43;
 }
 
 article,
