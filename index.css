@@ -21,7 +21,6 @@ body {
   -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #1f3c43;
 }
 
 article,
@@ -271,8 +270,8 @@ select:-webkit-autofill:focus {
 /*! ********* BACK-BTN END *************** */
 
 .features {
+  border: 2px solid green;
   width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -286,4 +285,8 @@ select:-webkit-autofill:focus {
   align-items: center;
   flex-wrap: wrap;
   gap: 20px;
+}
+
+.den span {
+  background-color: rgb(13, 0, 87) !important;
 }
