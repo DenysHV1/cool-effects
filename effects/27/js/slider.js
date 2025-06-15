@@ -1,9 +1,9 @@
 import muckupSlider from "./components/murkup.js";
+import cards from "./cards.js";
 
 const slider = (arr) => {
   const wrapper = document.querySelector(".wrapper");
   const pagination = document.querySelector(".pagination");
-
   const left = document.querySelector(".btn_arrow_left");
   const right = document.querySelector(".btn_arrow_right");
 
@@ -22,6 +22,7 @@ const slider = (arr) => {
     pagination.innerHTML = page;
     setTimeout(() => {
       wrapper.innerHTML = muckupSlider(num1, num2, arr).join("");
+      cards();
       wrapper.style.transition = "none";
       wrapper.style.transform = `translateX(${transitionIn})`;
 

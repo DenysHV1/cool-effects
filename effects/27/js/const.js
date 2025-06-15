@@ -1,67 +1,67 @@
 const array = [
   {
     img: "https://amanogawa.space/media/images/posters/2024/posters_thumbs/102.jpg",
-    name: "Монолог травниці1",
+    name: "Монолог травниці",
   },
   {
     img: "https://amanogawa.space/media/images/posters/2024/posters_thumbs/poster_650oPIC.jpg",
-    name: "Дандадан2",
+    name: "Дандадан",
   },
   {
     img: "https://amanogawa.space/media/images/posters/2025/posters_thumbs/poster.jpg",
-    name: "Тільки я візьму новий рівень 23",
+    name: "Тільки я візьму новий рівень 2",
   },
   {
     img: "https://amanogawa.space/media/images/posters/2024/posters_thumbs/poster_qpuE76N.jpg",
-    name: "Машл: Магія і м'язи4",
+    name: "Машл: Магія і м'язи",
   },
   {
     img: "https://amanogawa.space/media/images/posters/2024/posters_thumbs/poster_zVpL3hq.jpg",
-    name: "Кайджу №85",
+    name: "Кайджу №8",
   },
   {
     img: "https://amanogawa.space/media/images/posters/2023/posters_thumbs/poster_K3jekIa.jpg",
-    name: "Магічна битва6",
+    name: "Магічна битва",
   },
   {
     img: "https://amanogawa.space/media/images/posters/2024/posters_thumbs/poster_EPnZXkt.jpg",
-    name: "Тільки я візьму новий рівень7",
+    name: "Тільки я візьму новий рівень",
   },
   {
     img: "https://amanogawa.space/media/images/posters/2024/posters_thumbs/poster_0Lost7Y.jpg",
-    name: "Вітролом8",
+    name: "Вітролом",
   },
   {
     img: "https://amanogawa.space/media/images/posters/2024/posters_thumbs/poster_aJ5V3kG.jpg",
-    name: "Вежа бога9",
+    name: "Вежа бога",
   },
   {
     img: "https://amanogawa.space/media/images/posters/2025/posters_thumbs/poster_2xfshbQ.jpg",
-    name: "Наново10",
+    name: "Наново",
   },
   {
     img: "https://amanogawa.space/media/images/posters/2025/posters_thumbs/poster_kISf0cY.jpg",
-    name: "Лазар11",
+    name: "Лазар",
   },
   {
     img: "https://amanogawa.space/media/images/posters/2025/posters_thumbs/poster_QKTABC8.jpg",
-    name: "Початок після кінця12",
+    name: "Початок після кінця",
   },
   {
     img: "https://amanogawa.space/media/images/posters/2024/posters_thumbs/106.jpg",
-    name: "Сім'я шпигуна13",
+    name: "Сім'я шпигуна",
   },
   {
     img: "https://amanogawa.space/media/images/posters/2024/posters_thumbs/poster.jpg",
-    name: "Клас еліти14",
+    name: "Клас еліти",
   },
   {
     img: "https://amanogawa.space/media/images/posters/2025/posters_thumbs/poster_4Oar2Ig.jpg",
-    name: "Клинок зла15",
+    name: "Клинок зла",
   },
   {
     img: "https://amanogawa.space/media/images/posters/2025/posters_thumbs/poster.jpg",
-    name: "Ванпачмені16",
+    name: "Ванпачмені",
   },
 ];
 export default array;
