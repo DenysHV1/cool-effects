@@ -1,0 +1,54 @@
+span {
+  cursor: pointer;
+  position: relative;
+  color: black;
+  letter-spacing: 0.2em;
+
+  
+  display: inline-block;
+  transform-style: preserve-3d;
+  transform-origin: 0% 70%;
+}
+
+span:nth-child(even) {
+  color: hotpink;
+}
+
+.span1 {
+  animation: animate 2s infinite linear;
+}
+
+.span2 {
+  animation: animate 2s infinite linear;
+  animation-delay: 0.5s;
+}
+
+.span3 {
+  animation: animate 2s infinite linear;
+  animation-delay: 0.9s;
+}
+
+.span4 {
+  animation: animate 2s infinite linear;
+  animation-delay: 1.3s;
+}
+
+.span5 {
+  animation: animate 2s infinite linear;
+  animation-delay: 1.7s;
+}
+
+.span6 {
+  animation: animate 2s infinite linear;
+  animation-delay: 2s;
+}
+
+@keyframes animate {
+  35% {
+    transform: rotateZ(0deg);
+  }
+
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
