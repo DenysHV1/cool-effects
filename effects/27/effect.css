@@ -13,7 +13,7 @@ body {
 .wrapper {
   width: 50%;
   margin: 0 auto;
-  perspective: 800px;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -22,6 +22,9 @@ body {
 }
 
 /* ================== card */
+.card_wrapper {
+  perspective: 800px;
+}
 .card * {
   color: black;
 }
