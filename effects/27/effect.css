@@ -23,7 +23,7 @@ body {
 
 /* ================== card */
 .card_wrapper {
-  perspective: 800px;
+  perspective: 1000px;   
 }
 .card * {
   color: black;

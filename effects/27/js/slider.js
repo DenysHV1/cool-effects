@@ -8,7 +8,7 @@ const slider = (arr) => {
   const left = document.querySelector(".btn_arrow_left");
   const right = document.querySelector(".btn_arrow_right");
   // ======================
-  const offset = 7;
+  const offset = 5;
   // я зробив так щоб коли змінюємо offset то змінюється кількість елментів в одному слайді для адаптації під другі пристрої
   let num1 = 1;
   let num2 = offset + 1;
@@ -47,15 +47,14 @@ const slider = (arr) => {
   wrapper.innerHTML = muckupSlider(num1, num2, arr).join("");
   // ======================
   left.addEventListener("click", () => {
-    if (num1 === 1) return;
-
+    if (num1 <= 1) {
+      num1 = 1;
+      num2 = offset + 1;
+      return;
+    }
     num1 -= offset;
     num2 -= offset;
 
-    if (num1 < 1) {
-      num1 = 1;
-      num2 = offset + 1;
-    }
     if (page > 1) {
       page -= 1;
     }
@@ -63,11 +62,9 @@ const slider = (arr) => {
   });
   // ======================
   right.addEventListener("click", () => {
-    if (num2 - 1 >= arr.length) return;
+    if (num2 >= arr.length) return;
     num1 += offset;
     num2 += offset;
-
-    if (num1 >= arr.length) return;
 
     page += 1;
     render("right");
