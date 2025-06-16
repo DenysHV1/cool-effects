@@ -2,16 +2,18 @@ import muckupSlider from "./components/murkup.js";
 import cards from "./cards.js";
 
 const slider = (arr) => {
+  // ======================
   const wrapper = document.querySelector(".wrapper");
   const pagination = document.querySelector(".pagination");
   const left = document.querySelector(".btn_arrow_left");
   const right = document.querySelector(".btn_arrow_right");
-
-  const offset = 4;
+  // ======================
+  const offset = 7;
+  // я зробив так щоб коли змінюємо offset то змінюється кількість елментів в одному слайді для адаптації під другі пристрої
   let num1 = 1;
   let num2 = offset + 1;
   let page = 1;
-
+  // ======================
   const render = (direction) => {
     const transitionOut = direction === "left" ? "-100vw" : "100vw";
     const transitionIn = direction === "left" ? "100vw" : "-100vw";
@@ -25,7 +27,13 @@ const slider = (arr) => {
       cards();
       wrapper.style.transition = "none";
       wrapper.style.transform = `translateX(${transitionIn})`;
-
+      // двойні для того щоб завершити минулі фрейми, а точніше innerHTML та анімацію transition, transform, хз поки я працює до кінця
+      // або можна через setTimeout
+      // setTimeout(() => {
+      //   wrapper.style.transition = "transform .4s linear, opacity .2s linear";
+      //   wrapper.style.transform = "translateX(0)";
+      //   wrapper.style.opacity = 1;
+      // }, 100);
       requestAnimationFrame(() => {
         requestAnimationFrame(() => {
           wrapper.style.transition = "transform .4s linear, opacity .2s linear";
@@ -35,9 +43,9 @@ const slider = (arr) => {
       });
     }, 400);
   };
-
+  // ======================
   wrapper.innerHTML = muckupSlider(num1, num2, arr).join("");
-
+  // ======================
   left.addEventListener("click", () => {
     if (num1 === 1) return;
 
@@ -53,24 +61,17 @@ const slider = (arr) => {
     }
     render("left");
   });
-
+  // ======================
   right.addEventListener("click", () => {
     if (num2 - 1 >= arr.length) return;
-
     num1 += offset;
     num2 += offset;
 
     if (num1 >= arr.length) return;
 
-    if (num2 - 1 > arr.length) {
-      const remainder = arr.length % offset;
-      num2 = arr.length + 1;
-      num1 =
-        remainder === 0 ? arr.length - offset + 1 : arr.length - remainder + 1;
-    }
     page += 1;
     render("right");
   });
 };
-
+// ======================
 export default slider;

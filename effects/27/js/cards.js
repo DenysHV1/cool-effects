@@ -1,7 +1,7 @@
 const cards = () => {
   const cards = document.querySelectorAll(".card");
   const imgs = document.querySelectorAll(".card_box-image_item");
-  const MAX_ANGLE = 6;
+  const MAX_ANGLE = 4;
   cards.forEach((item, idx) => {
     //! mousemove
     item.addEventListener("mousemove", (evt) => {
@@ -17,7 +17,7 @@ const cards = () => {
       const rotateY = offsetX * MAX_ANGLE;
       const rotateX = offsetY * MAX_ANGLE;
 
-      evt.currentTarget.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.05)`;
+      evt.currentTarget.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.03)`;
 
       imgs[idx].style.transform = `translate(${x * 0.1}px, ${
         y * 0.1

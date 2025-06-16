@@ -63,5 +63,13 @@ const array = [
     img: "https://amanogawa.space/media/images/posters/2025/posters_thumbs/poster.jpg",
     name: "Ванпачмені",
   },
+  {
+    img: "https://amanogawa.space/media/images/posters/2025/posters_thumbs/poster.jpg",
+    name: "Ванпачмені",
+  },
+  {
+    img: "https://amanogawa.space/media/images/posters/2025/posters_thumbs/poster.jpg",
+    name: "Ванпачмені",
+  },
 ];
 export default array;
