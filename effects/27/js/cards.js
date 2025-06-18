@@ -12,7 +12,7 @@ const cards = () => {
 
       const centerX = rect.width / 2;
       const centerY = rect.height / 2;
-      const offsetX = -(x - centerX) / centerX;
+      const offsetX = -(x - centerX) / centerX; 
       const offsetY = (y - centerY) / centerY;
       const rotateY = offsetX * MAX_ANGLE;
       const rotateX = offsetY * MAX_ANGLE; 
