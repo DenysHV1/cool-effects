@@ -15,7 +15,7 @@ const cards = () => {
       const offsetX = -(x - centerX) / centerX;
       const offsetY = (y - centerY) / centerY;
       const rotateY = offsetX * MAX_ANGLE;
-      const rotateX = offsetY * MAX_ANGLE;
+      const rotateX = offsetY * MAX_ANGLE; 
 
       evt.currentTarget.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.03)`;
 
