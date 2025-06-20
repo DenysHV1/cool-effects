@@ -74,7 +74,7 @@ export const array = [
   },
 ];
 // кількість відображенниз елементів
-export const offset = 2
+export const offset = 4
 // час анімації
 export const time = 0.3
 // час поступової появи
