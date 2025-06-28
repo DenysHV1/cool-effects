@@ -1,4 +1,5 @@
-const array = [
+// масив, можна із бекенда
+export const array = [
   {
     img: "https://amanogawa.space/media/images/posters/2024/posters_thumbs/102.jpg",
     name: "Монолог травниці",
@@ -72,4 +73,19 @@ const array = [
     name: "Ванпачмені",
   },
 ];
-export default array;
+// кількість відображенниз елементів
+export const offset = 4
+// час анімації
+export const time = 0.3
+// час поступової появи
+export const fastOpasity = 0.1
+// збільшення карточки 
+export const SCALE = 1.03
+// збільшення картинкиf
+export const SCALEimg = 1.3
+// анімація карточки
+export const timeCard = 0.1
+// максимальний кут карточки
+export const MAX_ANGLE = 4
+// зміна положення картинки в карточці
+export const translateIMG = 0.1

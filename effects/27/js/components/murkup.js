@@ -1,5 +1,6 @@
-const muckupSlider = (num1, num2, arr) => {
-  return [...arr].slice(num1 - 1, num2 - 1).map((item) => {
+const muckupSlider = (num1, num2, arr, time, fastOpasity) => {
+  const wrapper = document.querySelector(".wrapper");
+  const arra = [...arr].slice(num1 - 1, num2 - 1).map((item) => {
     return `
         <div class="card_wrapper">
           <div class="card">
@@ -26,6 +27,16 @@ const muckupSlider = (num1, num2, arr) => {
           </div>
         </div>
       `;
+  });
+  wrapper.innerHTML = arra.join("");
+  const cards = document.querySelectorAll(".card");
+  cards.forEach((item, idx) => {
+    setTimeout(() => {
+      item.style.transition = `opacity ${time}s ${
+        fastOpasity * (idx + 1)
+      }s linear`;
+      item.classList.add("active");
+    }, 300);
   });
 };
 export default muckupSlider;
