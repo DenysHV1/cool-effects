@@ -78,13 +78,13 @@ export const offset = 4
 // час анімації
 export const time = 0.3
 // час поступової появи
-export const fastOpasity = 0.2
+export const fastOpasity = 0.1
 // збільшення карточки
 export const SCALE = 1.03
 // збільшення картинки
 export const SCALEimg = 1.3
 // анімація карточки
-export const timeCard = 0.3
+export const timeCard = 0.1
 // максимальний кут карточки
 export const MAX_ANGLE = 4
 // зміна положення картинки в карточці
