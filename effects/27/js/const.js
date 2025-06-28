@@ -79,9 +79,9 @@ export const offset = 4
 export const time = 0.3
 // час поступової появи
 export const fastOpasity = 0.1
-// збільшення карточки
+// збільшення карточки 
 export const SCALE = 1.03
-// збільшення картинки
+// збільшення картинкиf
 export const SCALEimg = 1.3
 // анімація карточки
 export const timeCard = 0.1
