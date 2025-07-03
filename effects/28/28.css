@@ -1,0 +1,31 @@
+body {
+  background-color: aquamarine;
+}
+.wrapper28 * {
+  color: black;
+  font-size: 30px;
+}
+.swiper {
+  height: 500px;
+  width: 400px;
+  margin: 0;
+  margin-left: 40px;
+  margin-top: 40px;
+}
+.swiper-slide_img {
+  cursor: pointer;
+  scale: 0.8;
+  transition: scale 0.3s ease, filter 0.3s ease;
+  filter: grayscale(1);
+}
+.swiper-slide_img.active {
+  scale: 1;
+  filter: grayscale(0);
+}
+.wrapper_imgs_item {
+  display: none;
+}
+.wrapper28 {
+  display: flex;
+  align-items: center;
+}
